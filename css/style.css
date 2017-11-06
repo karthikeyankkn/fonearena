@@ -1,0 +1,528 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body{
+	/*font-family: 'Futura-CondensedMedium', sans-serif;*/
+	background: #ededed;
+  font-family: font75370;
+}
+.container{
+	background: #545454;
+	max-width: 1200px;
+	margin: auto;
+}
+/*Header Style Code Starts Here*/
+header{
+	background: #95181e;
+	height: 150px;
+}
+.trace1-background{
+	  background: url(../images/trace-1.png)no-repeat;
+    height: inherit;
+    background-size: 15%;
+    background-position: -8% 0px;
+}
+.trace2-background{
+		background: url(../images/trace-2.png)no-repeat;
+    height: inherit;
+    background-size: 15%;
+    background-position: 109% 0px;
+}
+.qualcomm-logo-container{
+	height: inherit;
+  width: 400px;
+  display: inline-block;
+  text-decoration: none;
+}
+.qualcomm-logo{
+	background: url("../images/qualcomm logo.png")no-repeat;
+	height: inherit;
+	background-position: 33px 20px;
+}
+.snapdragon-text{
+	background: url("../images/snapdragon text.png")no-repeat;
+	height: inherit;
+	background-size: 65%;
+  background-position: 33px 58px;
+}
+.snapdragon-logo{
+	background: url("../images/Snapdragon logo.png")no-repeat;
+	height: inherit;
+	background-size: 65%;
+  background-position: 125px 12px;
+}
+.snapdragon-logo h3{
+  color: #fff;
+  font-weight: 400;
+  font-size: 26px;
+  padding: 100px 0px 0 240px;
+}
+.presentedby-container{
+	float: right;
+  margin-top: 90px;
+  margin-right: 8px;
+}
+.presentedby-container h3{
+	color: #fff;
+  font-weight: 400;
+  font-size: 26px;
+  display: inline-block;
+}
+.presentedby-container a{
+	display: inline-block;
+  width: 200px;
+  vertical-align: sub;
+}
+.rounded-rectangle{
+	background: url(../images/rounded-image.png)no-repeat;
+  height: 40px;
+  width:100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.fa-logo{
+	background: url("../images/fa logo.png")no-repeat;
+	height: 40px;
+	background-position: 8% 49%;
+}
+.fa-text{
+	background: url("../images/fonearena text.png")no-repeat;
+	height: 40px;
+	background-position: 80% 40%;
+}
+/*Header Style Code End Here*/
+
+/*Section Style Code Starts Here*/
+section{
+	padding:15px;
+  padding-bottom: 50px;
+}
+.banner-container{
+	background: #95181e;
+	display: inline-block;
+  width: 100%;
+  padding-bottom: 30px;
+  position: relative;
+}
+.banner-container h3{
+	color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
+}
+/*Hamburger style code starts here*/
+.ham-show{
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  z-index: 3;
+  display: none;
+}
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type {
+  margin-left: 0;
+}
+
+
+.hamburger .line{
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+
+/* NINE */
+
+#hamburger-9{
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-9.is-active{
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger-9:before{
+  content: "";
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  border-radius: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-9.is-active:before{
+  border: 5px solid #fff;
+}
+
+#hamburger-9.is-active .line{
+  width: 20px;
+}
+
+#hamburger-9.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-9.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+#hamburger-9.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(90deg);
+  -ms-transform: translateY(-13px) rotate(90deg);
+  -o-transform: translateY(-13px) rotate(90deg);
+  transform: translateY(-13px) rotate(90deg);
+}
+/*Hamburger style code end here*/
+
+/*.show-slider-menu{
+  left: 0!important;
+  display: block!important;
+}*/
+.slider-menu-container{
+	padding-top: 5px;
+	display: flex;
+}
+.slider-menu-container li{
+	  background: #7e1419;
+    list-style: none;
+    float: left;
+    width: 12%;
+    text-align: center;
+    margin-left: 5px;
+}
+.slider-menu-container li a{
+	text-decoration: none;
+	color: #a1595c;
+  padding: 10px 20px;
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+}
+.slider-menu-container li a:hover{
+	color: #fff;
+	-moz- transition: 0.2s ease;
+	-webkit- transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+/*Slider Style Code Start Here*/
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  width: 100% !important;
+  height: 400px !important;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: transparent;
+  text-align: center;
+  line-height: 300px;
+  width: 100% !important;
+  height: inherit !important;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  display: block;
+  padding: 10px 5px;
+  width: auto;
+  height: auto;
+  background: #a03439;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+#slider ul li a img{
+  max-width: 1000px;
+  height: 370px;
+  margin: auto;
+  display: block;
+}
+.mobile-slider li{
+  list-style: none;
+}
+/*Slider Style Code Start Here*/
+/*Video Slider Style Code Starts Here*/
+.video-play-box{
+  max-width: 800px;
+  height: 400px;
+  margin: 25px auto;
+  background: url("../images/karbonn thumb big.png")no-repeat;
+  background-size: 100%;
+}
+.video-play-box ul li{
+  list-style: none;
+  display: none;
+}
+.video-play-box ul li iframe{
+  width: 100%;
+  min-height: 400px;
+}
+.video-slider-container{
+  background: #000;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.video-slider-container h3{
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+}
+#video-slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  width: 100% !important;
+  height: 150px !important;
+}
+
+#video-slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  list-style: none;
+}
+
+#video-slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: transparent;
+  text-align: center;
+  line-height: 300px;
+  width: 20% !important;
+  height: inherit !important;
+  margin: 0 2.3%;
+}
+
+.video-control_prev, .video-control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 10px 5px;
+  width: auto;
+  height: auto;
+  background: #1f1f1f;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.video-control_prev:hover, .video-control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+.video-control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+.video-control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+#video-slider ul li b img{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+#video-slider ul li b{
+  cursor: pointer;
+}
+.video-mobile-slider li{
+  list-style: none;
+}
+#video-slider ul li b img:hover{
+  opacity: 0.5;
+}
+/*Video Slider Style Code End Here*/
+/*Section Style Code End Here*/
+/*Fotter Style Starts Here*/
+footer{
+  background: #95181e;
+}
+footer h6{
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 400;
+}
+/*Fotter Style End Here*/
+
+/*Media Query for Tablet and mobile responsive style code starts here*/
+@media only screen and (max-width: 1000px){
+  .qualcomm-logo-container{
+    width: 50%;
+  }
+  .qualcomm-logo{
+    background-size: 30%; 
+  }
+  .snapdragon-text{
+    background-size: 50%;
+  }
+  .snapdragon-logo{
+    background-position: 60px 12px; 
+  }
+  .snapdragon-logo h3{
+    padding: 100px 0 0 125px;
+    font-size: 20px;
+  }
+  .presentedby-container{
+    margin-top: 90px;
+  }
+  .presentedby-container h3{
+    font-size: 20px;
+  }
+  .ham-show{
+    display: block;
+  }
+  .banner-container h3{
+    margin-top: 50px;
+  }
+  .slider-menu-container{
+    display: inline-block;
+    width: 100%;
+    background: inherit;
+   /* top: 0px;
+    position: absolute;*/
+   /* z-index: 2;*/
+   /* left: -182px;*/
+    /*transition: 0.4s cubic-bezier(0.92, 0.12, 0.38, 1.48);
+    -webkit-transition: 0.4s cubic-bezier(0.92, 0.12, 0.38, 1.48);
+    -moz-transition: 0.4s cubic-bezier(0.92, 0.12, 0.38, 1.48);*/
+    display: none;
+}
+  .slider-menu-container li{
+    width: 100%;
+    margin: 1px 0;
+  }
+  #slider ul li a img{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 650px){
+    .qualcomm-logo-container{
+    width: 30%;
+  }
+  .qualcomm-logo{
+    background-size: 70%;
+    background-position: center;
+  }
+  .snapdragon-text{
+    background-size: 25%;
+    display: none;
+  }
+  .snapdragon-logo{
+    background-position: 30px 12px; 
+    display: none;
+  }
+  .snapdragon-logo h3{
+    padding: 100px 0 0 125px;
+    font-size: 20px;
+    display: none;
+  }
+  .presentedby-container{
+   margin: 45px 0 0 0;
+    width: 70%;
+    text-align: right;
+  }
+  .presentedby-container h3{
+    font-size: 16px;
+    padding-right: 10px;
+  }
+}
+/*Media Query for Tablet and mobile responsive style code end here*/

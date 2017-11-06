@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Incident-listing-resolution</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+		  <div class="row">
+		    <div class="col-sm-2">
+		    	<div class="row">
+			    	<!-- Side-nav content starts here -->
+						<div class="side-nav-container">
+							<div class="row">
+								<a href="../index.html" class="logo-container">
+									<img src="../images/fixnix-white-logo.png" alt="Fixnix-logo">
+								</a>
+		    				</div>
+		    				<div class="row profile-container">
+		    					<a href="#">
+		    						<img src="https://assets.servedby-buysellads.com/p/manage/asset/id/28536">
+		    						<span>
+		    							<h4>Name</h4>
+		    							<h5>Company Name</h5>
+		    						</span>
+		    					</a>
+		    				</div>
+		    				<div class="backto-overview-container">
+		    					<a href="../index.html">
+		    						<i class="fa fa-angle-left" aria-hidden="true"></i>
+		    						<h4>Back to Overview</h4>
+		    					</a>
+		    				</div>
+							<ul>
+									<li>
+									<i class="fa fa-tachometer" aria-hidden="true"></i>
+									<a href="#">Dashboard</a>
+								</li>
+								<li>
+									<i class="fa fa-sticky-note-o" aria-hidden="true"></i>
+									<a href="incident.html">Listings</a>
+								</li>
+								<li>
+									<i class="fa fa-cogs" aria-hidden="true"></i>
+									<a href="incident-file.html">File</a>
+								</li>
+								<li>
+									<i class="fa fa-line-chart" aria-hidden="true"></i>
+									<a href="incident-diagnosis.html">Diagnosis</a>
+								</li>
+								<li>
+									<i class="fa fa-check" aria-hidden="true"></i>
+									<a href="incident-resolution.html">Resolution</a>
+								</li>
+								<li>
+									<i class="fa fa-files-o" aria-hidden="true"></i>
+									<a href="incident-closure.html">Closure</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Side-nav content end here -->
+					</div>
+		    </div>
+		    <div class="col-sm-10">
+		    	<div class="row">
+		    		  <div class="col-sm-10">
+					    	<div class="row">
+					    	  <div class="col-sm-10">
+									  <div class="panel panel-primary">
+											<div class="panel-heading">Resolution
+											</div>
+											    <div class="panel-body">
+											     <table class="table">
+											      <tbody>
+											       <tr  class="danger">
+											         <td><b>Requested Details<b><td>
+											         <td></td>
+											       </tr>
+											      <tr>
+											        <td><b>Requester:</b></td>
+											        <td><b>Type:</b>Incident</td>
+											        <td><b>Title:</b>IncidentTwo</td>
+											      </tr>      
+											      <tr >
+											        <td><b>Category:</b>Desktop Hardware</td>
+											        <td><b>Department:</b>Finance Department</td>
+											        <td><b>Status:</b>Resolved</td>
+											      </tr>
+											      <tr>
+											        <td><b>Contact Number:</b></td>
+											        <td><b>Date Of Creation:</b> </td>
+											        <td></td>
+											      </tr>
+											     
+											      </tbody>
+											     </table>
+														     <div class="panel panel-primary">
+															    <div class="panel-heading">Summary</div>
+															    <div class="panel-body">Incident Two</div>
+														     </div>
+														   <table class="table">
+											      <tbody>
+											       <tr  class="danger">
+											         <td><b>Incident Evalution Details<b><td>
+											         <td></td>
+											       </tr>
+											      <tr>
+											        <td><b>Urgency:</b>Medium</td>
+											        <td><b>Assignee:</b>Mitigator</td>
+											        <td><b>Target date:</b>IncidentTwo</td>
+											      </tr>      
+											      <tr >
+											        <td><b>Priority:</b>Medium</td>
+											        <td><b>Escalation:</b></td>
+											        <td><b>Origin:</b>Phone</td>
+											      </tr>
+											      <tr>
+											        <td><b>Impact:</b></td>
+											        <td><b>SLA:</b> </td>
+											        <td>Resolution Time:</td>
+											      </tr>
+											     
+											      </tbody>
+											     </table>
+								      <div class="col-sm-10">
+								        <div class="row">
+						              <div class="form-group">
+						                   <h1>
+						                       Resolution Recovery
+                               </h1>
+						                  <div class="col-sm-4">
+
+<select ng-model="selectedCar" ng-options="x.model for x in cars">
+</select>
+					 		                 <label for="sel1">Re-Assignee:</label>
+									                <select class="form-control" id="sel1">
+										                <option>Mitigator</option>
+										                <option>2</option>
+											              <option>3</option>
+											              <option>4</option>
+											              <option>ng-repeat</option>
+									                </select>
+						                 </div>
+						              </div>
+				                    <div class="col-sm-4">
+						                  <div class="form-group">
+							                  <label for="sel1">Solutin Type:</label>
+									                <select class="form-control" id="sel1">
+										                <option>Infra solution</option>
+										                <option>2</option>
+											              <option>3</option>
+											              <option>4</option>
+									                </select>
+								              </div>
+								            </div>
+				                    <div class="col-sm-4">
+						                  <div class="form-group">
+							                  <label for="usr">Parent Incident Id:</label>
+							                  <input type="text" class="form-control" id="usr" >
+						                  </div>
+						                </div>
+						                   <div class="row">
+															   <div class="col-sm-10">
+															    <div class="form-group">
+															     <div class="col-sm-4"> 
+															      <label for="comment">Solution:</label>
+															      <textarea class="form-control" rows="5" id="comment">
+															      </textarea>
+															     </div>
+															     <div class="col-sm-4"> 
+															      <label for="comment">Root cause:</label>
+															      <textarea class="form-control" rows="5" id="comment">
+															      </textarea>
+															     </div>
+															        <div class="col-sm-4">
+											                  <div class="form-group">
+												                  <label for="sel1">Course Classification:</label>
+														                <select class="form-control" id="sel1">
+															                <option>Advice Given</option>
+															                <option>2</option>
+																              <option>3</option>
+																              <option>4</option>
+														                </select>
+																				    </div>
+																				   </div>
+																				  </div>
+			                     <div class="row">
+												    <div class="col-sm-10">
+												     <div class="pull-right">
+															<button type="button" class="btn btn-grey">Save as draft
+															</button>
+														  <button type="button" class="btn btn-warning">Save
+														  </button>	
+														 </div>
+														 </div>
+													  </div>
+												  </div> 
+										     <div class="row">
+											    <div class="col-sm-10">
+														<input id="incident_resolution"  type="file">
+													</div>
+												 </div>
+								    </div>
+								  </div>
+				    		</div>
+				    		<!-- panel body end here -->
+				    	</div>
+				    </div>
+				  </div>
+				</div>
+				<!-- jQuery library -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+				<!-- Latest compiled JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<!-- Font awesome CDN -->
+				<script src="https://use.fontawesome.com/926305ec7d.js"></script>
+				<!-- Script.js -->
+				<script type="text/javascript" src="../js/script.js"></script>
+			</body>
+		</html>
